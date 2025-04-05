@@ -18,10 +18,11 @@ const Register = () => {
     e.preventDefault();
 
     try {
-      await axios.post('http://localhost:4000/api/register', {
-        email,
-        senha,
-      });
+        await axios.post('https://backend-financeiro.onrender.com/api/register', {
+            email,
+            senha,
+          });
+          
 
       alert('Cadastro realizado com sucesso!');
       navigate('/login');
