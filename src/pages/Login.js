@@ -20,7 +20,7 @@ const Login = ({ onLogin }) => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:4000/api/login', {
+      const response = await axios.post('https://backend-financeiro.onrender.com/api/login', {
         email,
         senha,
       });
